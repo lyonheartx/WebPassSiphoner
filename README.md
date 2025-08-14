@@ -1,2 +1,2 @@
 This Chrome extension captures saved passwords that are saved and autofilled, or any password input field in real time. It works on password managers such as LastPass, Keeper, or 1Password. It then sends them to a web server that outputs the contents onto a txt file, the passwords are also displayed in console within Chrome. 
-Localhost web server does not need firewall rules or a https certificate. In order to install the Chrome extension, it either needs to be done with Group Policies and Registry, or manually in Developer Mode on Chrome. 
+Localhost web server does not need firewall rules or a https certificate. In order to install the Chrome extension, it either needs to be done with Group Policies and Registry, or manually in Developer Mode.
