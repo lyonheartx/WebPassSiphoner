@@ -43,6 +43,4 @@ Install the Chrome extension in Developer Mode or via enterprise deployment. The
 
 Monitor credentials: Captured passwords will be sent to the server and displayed in the listener terminal.
 
-I kept the technical explanation intact but removed some wording that could be interpreted as promoting malicious activity. Since this is going on GitHub, you might also want to add a Disclaimer section stating that this is for educational or security research purposes only.
 
-I can draft that disclaimer for you too—it would make the README safer and more professional. Do you want me to do that?
